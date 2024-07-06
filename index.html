@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .calculator {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+    .calculator div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .calculator input[type="number"] {
+      width: 60px;
+    }
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+  <h3>Custom Calculator</h3>
+
+  <button class="collapsible" onclick="toggleContent(this)">Den betas</button>
+  <div class="content">
+    <div>
+      <label>Variable 1:</label>
+      <input type="number" id="count1" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 2:</label>
+      <input type="number" id="count2" min="0" value="0">
+    </div>
+  </div>
+
+  <button class="collapsible" onclick="toggleContent(this)">Wrists</button>
+  <div class="content">
+    <div>
+      <label>Variable 3:</label>
+      <input type="number" id="count3" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 4:</label>
+      <input type="number" id="count4" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 5:</label>
+      <input type="number" id="count5" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 6:</label>
+      <input type="number" id="count6" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 7:</label>
+      <input type="number" id="count7" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 8:</label>
+      <input type="number" id="count8" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 9:</label>
+      <input type="number" id="count9" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 10:</label>
+      <input type="number" id="count10" min="0" value="0">
+    </div>
+  </div>
+
+  <button class="collapsible" onclick="toggleContent(this)">Collars</button>
+  <div class="content">
+    <div>
+      <label>Variable 11:</label>
+      <input type="number" id="count11" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 12:</label>
+      <input type="number" id="count12" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 13:</label>
+      <input type="number" id="count13" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 14:</label>
+      <input type="number" id="count14" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 15:</label>
+      <input type="number" id="count15" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 16:</label>
+      <input type="number" id="count16" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 17:</label>
+      <input type="number" id="count17" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 18:</label>
+      <input type="number" id="count18" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 19:</label>
+      <input type="number" id="count19" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 20:</label>
+      <input type="number" id="count20" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 21:</label>
+      <input type="number" id="count21" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 22:</label>
+      <input type="number" id="count22" min="0" value="0">
+    </div>
+  </div>
+
+  <button class="collapsible" onclick="toggleContent(this)">Others</button>
+  <div class="content">
+    <div>
+      <label>Variable 23:</label>
+      <input type="number" id="count23" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 24:</label>
+      <input type="number" id="count24" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 25:</label>
+      <input type="number" id="count25" min="0" value="0">
+    </div>
+    <div>
+      <label>Variable 26:</label>
+      <input type="number" id="count26" min="0" value="0">
+    </div>
+  </div>
+
+  <div>
+    <label>Total:</label>
+    <output id="total">0.00</output>
+  </div>
+
+</div>
+
+<script>
+  function toggleContent(button) {
+    button.classList.toggle("active");
+    var content = button.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
+
+  // If the platform supports it, this function can be added to calculate the values
+  function calculateTotal() {
+    const values = [0.62, 1.23, 2.34, 3.45, 4.56, 5.67, 6.78, 7.89, 8.90, 9.01, 10.12, 11.23, 12.34, 13.45, 14.56, 15.67, 16.78, 17.89, 18.90, 19.01, 20.12, 21.23, 22.34, 23.45, 24.56, 25.67];
+    let sum = 0;
+    for (let i = 1; i <= 26; i++) {
+      let count = parseInt(document.getElementById('count' + i).value) || 0;
+      sum += values[i - 1] * count;
+    }
+    document.getElementById('total').innerText = sum.toFixed(2);
+  }
+
+  // Attach event listeners to all inputs to update the total dynamically if the platform supports it
+  document.querySelectorAll('.calculator input[type="number"]').forEach(input => {
+    input.addEventListener('input', calculateTotal);
+  });
+</script>
+
+</body>
+</html>
