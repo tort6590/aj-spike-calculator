@@ -1,0 +1,96 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('your-custom-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* Calculator styles */
+.calculator {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.collapsible {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.collapsible:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  display: none;
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.active {
+  display: block;
+}
+
+.content div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.content label {
+  font-size: 1.1em;
+}
+
+.content input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.total {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.total label {
+  font-size: 1.3em;
+}
+
+.total output {
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #007bff;
+}
