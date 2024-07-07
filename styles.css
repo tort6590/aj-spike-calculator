@@ -17,11 +17,11 @@
 
 /* Apply custom fonts to elements */
 body {
-  font-family: 'TikiIsland', Arial, sans-serif;
+  font-family: 'CCDigitalDeliveryDisplay', Arial, sans-serif;
 }
 
 .calculator h1 {
-  font-family: 'CCDigitalDeliveryDisplay', Arial, sans-serif;
+  font-family: 'TikiIsland', Arial, sans-serif;
 }
 
 /* Other existing CSS styles */
