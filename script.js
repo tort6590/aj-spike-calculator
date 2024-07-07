@@ -1,31 +1,52 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Collapsible functionality
-  const colls = document.querySelectorAll('.collapsible');
-  colls.forEach(coll => {
-    coll.addEventListener('click', function() {
-      this.classList.toggle('active');
-      const content = this.nextElementSibling;
-      if (content.style.display === 'block') {
-        content.style.display = 'none';
+document.addEventListener("DOMContentLoaded", function () {
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
       } else {
-        content.style.display = 'block';
+        content.style.display = "block";
+      }
+    });
+  }
+
+  var incrementButtons = document.querySelectorAll('.increment');
+  var decrementButtons = document.querySelectorAll('.decrement');
+
+  incrementButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      var input = this.previousElementSibling;
+      input.value = parseInt(input.value) + 1;
+      calculateTotal();
+    });
+  });
+
+  decrementButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      var input = this.nextElementSibling;
+      if (input.value > 0) {
+        input.value = parseInt(input.value) - 1;
+        calculateTotal();
       }
     });
   });
 
-  // Calculate total function
   function calculateTotal() {
-    const values = [0.0307, 0.0444, 0.0307, 0.0376, 0.0444, 0.0691, 0.05, 0.0556, 0.0625, 0.075, 0.08, 0.1, 0.125, 0.178, 0.249, 0.251, 0.3, 0.33, 0.375, 0.428, 0.5, 1]; // All spike variables' respective values
-    let sum = 0;
-    for (let i = 1; i <= values.length; i++) {
-      let count = parseInt(document.getElementById('count' + i).value) || 0;
-      sum += values[i - 1] * count;
-    }
-    document.getElementById('total').innerText = sum.toFixed(2);
-  }
+    var total = 0;
+    var values = {
+      count1: 0.62, count2: 0.5, count3: 1.5, count4: 2, count5: 2.5,
+      count6: 3, count7: 4, count8: 4.5, count9: 5, count10: 6,
+      count11: 6.5, count12: 7, count13: 8, count14: 9, count15: 10,
+      count16: 11, count17: 12, count18: 13, count19: 14, count20: 15,
+      count21: 16, count22: 17
+    };
 
-  // Event listeners for input changes
-  document.querySelectorAll('.calculator input[type="number"]').forEach(input => {
-    input.addEventListener('input', calculateTotal);
-  });
+    for (var key in values) {
+      total += (parseInt(document.getElementById(key).value) || 0) * values[key];
+    }
+
+    document.getElementById('total').textContent = total.toFixed(2);
+  }
 });
