@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Calculate total function
   function calculateTotal() {
-    const values = [0.62, 1.23]; // Adjust values as needed for your variables
+    const values = [0.03, 0.04]; // Adjust values as needed for your variables
     let sum = 0;
     for (let i = 1; i <= values.length; i++) {
       let count = parseInt(document.getElementById('count' + i).value) || 0;
