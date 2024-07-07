@@ -8,9 +8,9 @@
 }
 
 @font-face {
-  font-family: 'CCDigitalDeliveryDisplay';
-  src: url('fonts/CCDigitalDeliveryDisplay.woff2') format('woff2'),
-       url('fonts/CCDigitalDeliveryDisplay.woff') format('woff');
+  font-family: 'CCDigitalDelivery';
+  src: url('fonts/CCDigitalDelivery.woff2') format('woff2'),
+       url('fonts/CCDigitalDelivery.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
