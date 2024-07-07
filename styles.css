@@ -8,7 +8,11 @@
 /* Body styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('https://animaljamarchives.squarespace.com/environments');
+<<<<<<< HEAD
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5737ad2a1d07c093e2787063/1673742874230-1Z0B78H2HHZZ9T44491B/infinite%2Bpattern.png?format=1000w');
+=======
+  background-image: url('your-custom-background-image.jpg');
+>>>>>>> parent of 3112926 (Update styles.css)
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
