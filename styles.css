@@ -1,8 +1,8 @@
 /* Define custom fonts */
 @font-face {
   font-family: 'TikiIsland';
-  src: url('fonts/CustomFont1.woff2') format('woff2'),
-       url('fonts/CustomFont1.woff') format('woff');
+  src: url('fonts/TikiIsland.woff2') format('woff2'),
+       url('fonts/TikiIsland.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,7 +35,7 @@ body {
 
 /* Body styles */
 body {
-  font-family: 'TikiIsland', Arial, sans-serif;
+  font-family: 'CCDigitalDeliveryDisplay', Arial, sans-serif;
   background-image: url('https://images.squarespace-cdn.com/content/v1/5737ad2a1d07c093e2787063/1673742874230-1Z0B78H2HHZZ9T44491B/infinite%2Bpattern.png?format=1000w');
   background-size: cover;
   background-position: repeat-x;
