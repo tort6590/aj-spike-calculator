@@ -6,6 +6,8 @@ This calculator was made for the online MMO game Animal Jam (aka AJ, Animal Jam 
 
 This is still a bit of a work-in-progress, so you may see frequent changes in the future.
 
+Thank you to [Animal Jam Archives](https://animaljamarchives.squarespace.com/) for providing all of the assets used including the fonts, backgrounds, and images!
+
 
 
 _**Please note that this calculator is only meant to be a rough estimate of what spikes are currently worth. It somewhat accounts for demand, and is not constantly updated.**_
