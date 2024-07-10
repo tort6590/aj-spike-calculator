@@ -59,18 +59,18 @@ body {
 
 .calculator h1 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 20px;
 }
 
 .collapsible {
-  background-color: #007bff;
-  color: white;
+  background-color: #5fa824;
+  color: #1D4200;
   cursor: pointer;
   padding: 10px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 1.2em;
   margin-bottom: 10px;
@@ -78,7 +78,7 @@ body {
 }
 
 .collapsible:hover {
-  background-color: #0056b3;
+  background-color: #77d22d;
 }
 
 .content {
@@ -158,5 +158,5 @@ body {
   font-size: 2.5em;
   font-weight: bold;
   margin-top: 10px;
-  color: #007bff;
+  color: #333333;
 }
