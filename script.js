@@ -28,4 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.calculator input[type="number"]').forEach(input => {
     input.addEventListener('input', calculateTotal);
   });
+
+  // Event listeners for button clicks
+  document.querySelectorAll('.controls button').forEach(button => {
+    button.addEventListener('click', function() {
+      const input = this.parentElement.querySelector('input[type="number"]');
+      let value = parseInt(input.value) || 0;
+      if (this.classList.contains('increment')) {
+        input.value = value + 1;
+      } else if (this.classList.contains('decrement') && value > 0) {
+        input.value = value - 1;
+      }
+      calculateTotal();
+    });
+  });
 });
