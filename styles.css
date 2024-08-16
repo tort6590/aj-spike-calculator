@@ -1,4 +1,4 @@
-/* Define custom fonts */
+/* custom fonts */
 @font-face {
   font-family: 'TikiIsland';
   src: url('fonts/TikiIsland.woff2') format('woff2'),
@@ -15,7 +15,7 @@
   font-style: normal;
 }
 
-/* Apply custom fonts to elements */
+/* custom fonts styles */
 body {
   font-family: 'TikiIsland', Arial, sans-serif;
 }
@@ -28,16 +28,16 @@ body {
   font-family: 'CCDigitalDelivery', Arial, sans-serif;
 }
 
-/* Other existing CSS styles */
+/* now for the actual designer part */
 
-/* Reset default styles */
+/* begone default */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body styles */
+/* main shit */
 body {
   font-family: 'TikiIsland', Arial, sans-serif;
   background-image: url('https://images.squarespace-cdn.com/content/v1/5737ad2a1d07c093e2787063/1673742874230-1Z0B78H2HHZZ9T44491B/infinite%2Bpattern.png?format=1000w');
@@ -47,7 +47,7 @@ body {
   color: #333;
 }
 
-/* Calculator styles */
+/* calculator swag */
 .calculator {
   max-width: 800px;
   margin: 50px auto;
@@ -95,19 +95,21 @@ body {
 .item-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.item {
-  width: 23%;
+/* item containers */
+.item-db, .item-wrist, .item-collar {
+  flex: 1 1 calc(25% - 20px); /* 4 columns by default */
   margin-bottom: 20px;
   text-align: center;
 }
-
-.item img {
-  max-width: 100%;
-  border-radius: 5px;
+/* item images */
+.item-db img, .item-wrist img, .item-collar img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
 }
 
 .controls {
@@ -115,34 +117,60 @@ body {
   align-items: center;
   justify-content: space-around;
   margin-top: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .controls button {
-  padding: 20px 20px;
+  padding: 10px;
   border: none;
   background: none;
   cursor: pointer;
-  background-image: url('https://images.squarespace-cdn.com/content/v1/5737ad2a1d07c093e2787063/1522015781808-TLOXSL13DPVHMPW7UP68/Screen+Shot+2018-03-09+at+6.36.53+PM.png?format=300w');
-  /* +/- buttons
   background-size: contain;
+  background-repeat: no-repeat;
   appearance: none;
+  object-fit: contain;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
 }
 
+/* Plus button */
+.controls button.plus {
+  background-image: url(C:\Users\brdes\Main Folder\Documents\GitHub\aj-spike-calculator\images\PlusIcon.png); 
+  width: 30px;
+  height: 30px;
+}
+
+/* Minus button */
+.controls button.minus {
+  background-image: url(C:\Users\brdes\Main Folder\Documents\GitHub\aj-spike-calculator\images\MinusIcon.png); 
+    width: 30px;
+  height: 30px;
+}
+
 .controls input {
-  width: 50px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border: none;
   background: none;
   outline: none;
-  font-size: inherit;
+  font-size: 1.2em;
+  line-height: 40px;
   font-family: inherit;
-  -webkit-appearance: none !important; /* For WebKit browsers like Edge */
-  -moz-appearance: textfield !important; /* For Firefox */
-  -ms-appearance: none !important; /* For Edge */
-  appearance: none !important;
+}
+
+.controls input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.controls input[type=number]::-webkit-outer-spin-button,
+.controls input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .total {
@@ -160,4 +188,18 @@ body {
   font-weight: bold;
   margin-top: 10px;
   color: #333333;
+}
+
+
+/* Responsive media shit idfk please work */
+@media (max-width: 900px) {
+  .item-db, .item-wrist, .item-collar {
+    flex: 1 1 calc(50% - 20px); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .item-db, .item-wrist, .item-collar {
+    flex: 1 1 100%; /* 1 column for narrow screens */
+  }
 }
