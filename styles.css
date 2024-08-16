@@ -137,14 +137,14 @@ body {
 
 /* Plus button */
 .controls button.plus {
-  background-image: url(C:\Users\brdes\Main Folder\Documents\GitHub\aj-spike-calculator\images\PlusIcon.png); 
+  background-image: url(/images/PlusIcon.png); 
   width: 30px;
   height: 30px;
 }
 
 /* Minus button */
 .controls button.minus {
-  background-image: url(C:\Users\brdes\Main Folder\Documents\GitHub\aj-spike-calculator\images\MinusIcon.png); 
+  background-image: url:(/images/MinusIcon.png); 
     width: 30px;
   height: 30px;
 }
