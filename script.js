@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       const input = this.parentElement.querySelector('input[type="number"]');
       let value = parseInt(input.value) || 0;
-      if (this.classList.contains('increment')) {
+      if (this.classList.contains('plus')) {
         input.value = value + 1;
-      } else if (this.classList.contains('decrement') && value > 0) {
+      } else if (this.classList.contains('minus') && value > 0) {
         input.value = value - 1;
       }
       calculateTotal();

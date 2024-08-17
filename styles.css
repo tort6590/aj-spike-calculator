@@ -72,7 +72,7 @@ body {
   border: none;
   text-align: center;
   outline: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -138,15 +138,15 @@ body {
 /* Plus button */
 .controls button.plus {
   background-image: url("https://i.imgur.com/lLNhIiA.png"); 
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Minus button */
 .controls button.minus {
   background-image: url("https://i.imgur.com/sBTSfgC.png"); 
-    width: 30px;
-  height: 30px;
+    width: 40px;
+  height: 40px;
 }
 
 .controls input {
@@ -156,7 +156,7 @@ body {
   border: none;
   background: none;
   outline: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 40px;
   font-family: inherit;
 }
