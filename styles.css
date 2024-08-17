@@ -135,17 +135,17 @@ body {
   -ms-appearance: none;
 }
 
-/* Plus button */
-.controls button.plus {
+/* increment button */
+.controls button.increment {
   background-image: url("https://i.imgur.com/lLNhIiA.png"); 
   width: 40px;
   height: 40px;
 }
 
-/* Minus button */
-.controls button.minus {
+/* decrement button */
+.controls button.decrement {
   background-image: url("https://i.imgur.com/sBTSfgC.png"); 
-    width: 40px;
+  width: 40px;
   height: 40px;
 }
 
