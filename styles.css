@@ -173,16 +173,16 @@ body {
   margin: 0;
 }
 
-.total {
+.Total {
   text-align: center;
   margin-top: 20px;
 }
 
-.total label {
+.Total label {
   font-size: 1.3em;
 }
 
-.total total {
+.Total Total {
   display: block;
   font-size: 2.5em;
   font-weight: bold;
