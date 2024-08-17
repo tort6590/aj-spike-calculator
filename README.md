@@ -2,7 +2,7 @@
 
 https://tort6590.github.io/aj-spike-calculator/
 
-This calculator was made for the online MMO game Animal Jam (aka AJ, Animal Jam Classic, or AJC) to easily add up the worth of various integral items in the game's worth system. This calculator includes den betas (member and nonmember), rare spiked wristbands (long and short), and rare spiked collars (long and short). Each item is given its own value based on the black long system (where a black long = 1.00) which is then added up into the Total sum displayed at the bottom. This calculator's purpose is to give users an easy way to add up their own worth, see if a trade is fair, and generally make trading an easier experience for users less familiar with the game's player-driven economy. 
+This calculator was made for the online MMO game Animal Jam (aka AJ, Animal Jam Classic, or AJC) to easily add up the worth of various integral items in the game's worth system. This calculator includes den betas (member and nonmember), rare spiked wristbands (long and short), and rare spiked collars (long and short). Each item is given its own value based on the black long system (where a black long = 1.00) which is then added up into the total sum displayed at the bottom. This calculator's purpose is to give users an easy way to add up their own worth, see if a trade is fair, and generally make trading an easier experience for users less familiar with the game's player-driven economy. 
 
 This is still a bit of a work-in-progress, so you may see frequent changes in the future.
 
