@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // function to calculate total
-  function calculatetotal() {
-    const values = [0.0307, 0.0444, 0.0307, 0.0376, 0.0444, 0.0691, 0.05, 0.0556, 0.0625, 0.075, 0.08, 0.1, 0.125, 0.178, 0.249, 0.251, 0.3, 0.3751, 0.375, 0.428, 0.5, 1]; // All spike variables' respective values
+  function calculateTotal() {
+    const values = [0.0307, 0.0444, 0.0307, 0.0376, 0.0444, 0.0691, 0.05, 0.0556, 0.0625, 0.075, 0.08, 0.1, 0.125, 0.178, 0.249, 0.251, 0.3, 0.33, 0.375, 0.428, 0.5, 1]; // All spike variables' respective values
   let sum = 0;
 
   for (let i = 1; i <= values.length; i++) {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // number changed?
   document.querySelectorAll('.calculator input[type="number"]').forEach(input => {
-    input.addEventListener('input', calculatetotal);
+    input.addEventListener('input', calculateTotal);
   });
 
   // button clicked?
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (this.classList.contains('decrement') && value > 0) {
         input.value = value - 1;
       }
-      calculatetotal();
+      calculateTotal();
     });
   });
 });
